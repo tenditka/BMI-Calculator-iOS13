@@ -15,9 +15,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
+        let height = String(format: "%.2f", sender.value)
+        heightLabel.text = "\(height) m"
     }
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
+        let weight = String(format: "%.2f", sender.value)
+        weightLabel.text = "\(weight) kg"
     }
     
     override func viewDidLoad() {
